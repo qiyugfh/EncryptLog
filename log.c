@@ -56,13 +56,13 @@ void cipher_buf(unsigned char *buf, uint32_t expand_buf_len)
 
 void write_log(const char *level, const char *file, const char *function, const long line, const char *fmt, ...)
 {
-	time_t rawtime;
-	struct tm *timeinfo;
-	time(&rawtime);
-	timeinfo = localtime(&rawtime);
-	char datetime[28] = {0};
-	strftime(datetime, sizeof(datetime), "%Y-%m-%d %H:%M:%S", timeinfo);
-	
+    time_t rawtime;
+    struct tm *timeinfo;
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+    char datetime[28] = {0};
+    strftime(datetime, sizeof(datetime), "%Y-%m-%d %H:%M:%S", timeinfo);
+
     FILE *fp = fopen(encrypt_file_name, "ab+");
     if(fp == NULL){
         return;

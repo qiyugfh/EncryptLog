@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     setKey(pw, strlen(pw));
 
     for(int n=0; n<1000; n++){
-		log_debug("hello %d.", n);
+        log_debug("hello %d.", n);
     }
     decipher_log(pw, strlen(pw), encrypt_file_name, decrypt_file_name);
 

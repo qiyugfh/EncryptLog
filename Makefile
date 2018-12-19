@@ -5,5 +5,3 @@ test: $(SRC)
 .PHONY: clean
 clean:
 	-rm test *.log
-
-
