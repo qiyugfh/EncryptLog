@@ -94,7 +94,7 @@ void write_log(const char *level, const char *file, const char *function, const 
     fflush(fp);
     fclose(fp);
 
-    // 像屏幕打印
+    // 屏幕打印
     fprintf(stdout, "%s", msgBuf);
     free(msgBuf);
 }
